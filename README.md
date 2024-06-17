@@ -11,5 +11,4 @@
 ![wLxcovdHgeRt4nn4L](https://github.com/Dohyeon-Parrk/photogram_insta/assets/144636860/5eb57519-9a62-4e61-a3db-dbde261b24e2)
 
 
-https://github.com/Dohyeon-Parrk/photogram_insta/assets/144636860/049f009c-ec3a-45db-83e8-39c7a7aa9081
 

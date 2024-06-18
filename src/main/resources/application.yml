@@ -17,8 +17,8 @@ spring:
     url: jdbc:mariadb://localhost:3306/photograminsta?serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&useSSL=false
     #url: jdbc:mariadb://localhost:3306/parkyj30893213?serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&useSSL=false
     #url: jdbc:mariadb://parkyj30893213.cafe24.com:3306/parkyj30893213?serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&useSSL=false
-    username: parkyj30893213
-    password: Pyj3213!!
+    username: root
+    password: 1234
     
   jpa:
     open-in-view: true

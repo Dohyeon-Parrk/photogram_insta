@@ -15,7 +15,7 @@
 			<li><a href="#a">위치</a></li>
 		</ul>
 		<div class="copy">
-			<p>© 2020 Photogram from There Programing</p>
+			<p>© 2024 Photogram_insta from Dohyeon_Park</p>
 		</div>
 	</div>
 </footer>

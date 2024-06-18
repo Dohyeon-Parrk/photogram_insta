@@ -28,16 +28,17 @@ public class SubscribeService {
 		sb.append("if((? = u.id), 1, 0) equalUserState ");		// ? -> principalId
 		sb.append("FROM user u INNER JOIN subscribe s ");
 		sb.append("ON u.id = s.toUserId ");
-		sb.append("WHERE s.fromUserId = ? ");		// ? -> pageUserId
+		sb.append("WHERE s.fromUserId = ?");		// ? -> pageUserId
 		
 		Query query = em.createNativeQuery(sb.toString())
 				.setParameter(1, principalId)
-				.setParameter(2,  principalId)
+				.setParameter(2, principalId)
 				.setParameter(3, pageUserId);
 		
 		JpaResultMapper result = new JpaResultMapper();
-		List<SubscribeDto>subscribeDtos = result.list(query, SubscribeDto.class);
-		
+
+		List<SubscribeDto> subscribeDtos = result.list(query, SubscribeDto.class);
+
 		return subscribeDtos;
 	}
 	

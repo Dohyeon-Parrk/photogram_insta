@@ -22,7 +22,7 @@ public class Image {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	private String caption;
 	private String postImageUrl;		// 사진을 전송받아서 그 사진을 서버 특정 폴더에 저장 -DB에 저장된 경로를 insert

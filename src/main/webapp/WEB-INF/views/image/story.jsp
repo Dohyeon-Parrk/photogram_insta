@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp"%>
-
+<html>
+<body>
 <main class="main">
 	<section class="container">
 		<!--전체 리스트 시작-->

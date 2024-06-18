@@ -1,15 +1,13 @@
 package parkyj3213.photograminsta.web.dto.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import parkyj3213.photograminsta.domain.user.User;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Setter
+@Getter
 public class UserProfileDto {
 
 	private boolean pageOwnerState;

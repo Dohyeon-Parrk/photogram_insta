@@ -27,7 +27,7 @@ public class Likes {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	
 	@JoinColumn(name = "imageId")
 	@ManyToOne

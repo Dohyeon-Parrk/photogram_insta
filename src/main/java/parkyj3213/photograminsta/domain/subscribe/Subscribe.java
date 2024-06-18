@@ -25,7 +25,7 @@ public class Subscribe {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	@JoinColumn(name = "fromUserId")
 	@ManyToOne

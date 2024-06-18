@@ -7,6 +7,7 @@ import parkyj3213.photograminsta.domain.user.User;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 
 @Data
 public class PrincipalDetails implements UserDetails {
@@ -14,6 +15,7 @@ public class PrincipalDetails implements UserDetails {
 	private static final long serialVersionUID = 1L;
 
 	private User user;
+	private Map<String, Object> attributes;
 
 	public PrincipalDetails(User user) {
 		this.user = user;
@@ -23,9 +25,7 @@ public class PrincipalDetails implements UserDetails {
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 
 		Collection<GrantedAuthority> collector = new ArrayList<>();
-		collector.add(() -> {
-			return user.getRole();
-		});
+		collector.add(() -> user.getRole());
 		return collector;
 	}
 

@@ -22,8 +22,8 @@ public class SecurityConfig {
 			.anyRequest().permitAll()
 			.and()
 			.formLogin()
-			.loginPage("/auth/signin")		//GET
-			.loginProcessingUrl("/auth/signin")		//POST : security가 로그인 프로세스 진행
+			.loginPage("/index")		//GET
+			.loginProcessingUrl("/index")		//POST : security가 로그인 프로세스 진행
 			.defaultSuccessUrl("/");
 		return http.build();
 	}

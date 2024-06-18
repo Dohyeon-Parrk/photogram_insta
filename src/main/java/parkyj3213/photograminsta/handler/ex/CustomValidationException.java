@@ -1,7 +1,10 @@
 package parkyj3213.photograminsta.handler.ex;
 
+import lombok.Getter;
+
 import java.util.Map;
 
+@Getter
 public class CustomValidationException extends RuntimeException{
 	
 	// 객체 구분할 때
@@ -12,10 +15,6 @@ public class CustomValidationException extends RuntimeException{
 	public CustomValidationException(String message, Map<String, String> errorMap) {
 		super(message);
 		this.errorMap = errorMap;
-	}
-	
-	public Map<String, String> getErrorMap(){
-		return errorMap;
 	}
 
 }

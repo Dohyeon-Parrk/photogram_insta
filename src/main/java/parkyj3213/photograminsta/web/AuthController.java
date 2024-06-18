@@ -19,9 +19,9 @@ public class AuthController {
 
 	private final AuthService authService;
 
-	@GetMapping("/auth/signin")
+	@GetMapping("/index")
 	public String signinForm() {
-		return "auth/signin";
+		return "/index";
 	}
 
 	@GetMapping("/auth/signup")
@@ -37,6 +37,6 @@ public class AuthController {
 
 			User userEntity = authService.회원가입(user);
 
-			return "auth/signin";
+			return "/index";
 	}
 }

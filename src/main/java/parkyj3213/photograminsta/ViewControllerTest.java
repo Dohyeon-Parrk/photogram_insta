@@ -10,9 +10,9 @@ public class ViewControllerTest {
 		return "auth/signup";
 	}
 	
-	@GetMapping("/auth/signin")
+	@GetMapping("/auth/index")
 	public String signinPage() {
-		return "auth/signin";
+		return "signin";
 	}
 	
 	@GetMapping("/image/story")

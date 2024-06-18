@@ -1,12 +1,14 @@
 package parkyj3213.photograminsta.web.dto.auth;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import parkyj3213.photograminsta.domain.user.User;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-@Data
+@Getter
+@Setter
 public class SignupDto {
 	
 	@Size(min = 2, max = 20)

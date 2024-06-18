@@ -43,9 +43,7 @@ public class UserService {
 			e.printStackTrace();
 		}
 
-		User userEntity = userRepository.findById(principalId).orElseThrow(() -> {
-			throw new CustomApiException("유저를 찾을 수 없습니다.");
-		});
+		User userEntity = userRepository.findById(principalId).orElseThrow(() -> new CustomApiException("유저를 찾을 수 없습니다."));
 		userEntity.setProfileImageUrl(imageFileName);
 		
 		return userEntity;
@@ -56,9 +54,7 @@ public class UserService {
 	public UserProfileDto 회원프로필(int pageUserId, int principalId) {
 		UserProfileDto dto = new UserProfileDto();
 		
-		User userEntity = userRepository.findById(pageUserId).orElseThrow(()-> {
-			throw new CustomException("해당 프로필 페이지는 없는 페이지입니다.");
-		});
+		User userEntity = userRepository.findById(pageUserId).orElseThrow(()-> new CustomException("해당 프로필 페이지는 없는 페이지입니다."));
 		
 		dto.setUser(userEntity);
 		dto.setPageOwnerState(pageUserId == principalId);
@@ -80,9 +76,7 @@ public class UserService {
 
 	@Transactional
 	public User 회원수정(int id, User user) {
-		User userEntity = userRepository.findById(id).orElseThrow(() -> {
-			return new CustomValidationApiException("찾을 수 없는 id입니다.");
-		});
+		User userEntity = userRepository.findById(id).orElseThrow(() -> new CustomValidationApiException("찾을 수 없는 id입니다."));
 
 		userEntity.setName(user.getName());
 

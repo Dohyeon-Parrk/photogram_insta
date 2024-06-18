@@ -20,7 +20,7 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // .IDENTITY: autoincrement가 DB에 맞게 적용됨
-	private int id;
+	private Integer id;
 
 	@Column(length = 20, unique = true)
 	private String username;

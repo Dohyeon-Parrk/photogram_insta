@@ -1,19 +1,23 @@
 package parkyj3213.photograminsta.web.dto.subscribe;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigInteger;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class SubscribeDto {
 
-	private int id;
+	private Integer id;
 	private String username;
 	private String profileImageUrl;
-	private Integer subscribeState;
-	private Integer equalUserState;
+	private BigInteger subscribeState;
+	private BigInteger equalUserState;
 }

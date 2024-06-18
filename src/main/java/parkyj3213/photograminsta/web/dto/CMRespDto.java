@@ -1,12 +1,11 @@
 package parkyj3213.photograminsta.web.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class CMRespDto<T> {
 
 	private int code;		//1(성공) , -1(실패)

@@ -14,5 +14,8 @@ Integer  -> BigInteger
 https://github.com/Dohyeon-Parrk/photogram_insta/assets/144636860/7948159d-ce17-49cd-980e-75c5b1c4eda0
 
 
+[포토그램인스타 화면정의서.pptx](https://github.com/user-attachments/files/15886100/default.pptx)
+
+
 
 

@@ -14,9 +14,5 @@ Integer  -> BigInteger
 https://github.com/Dohyeon-Parrk/photogram_insta/assets/144636860/7948159d-ce17-49cd-980e-75c5b1c4eda0
 
 
-</br></br></br></br></br></br></br>
-![wLxcovdHgeRt4nn4L](https://github.com/Dohyeon-Parrk/photogram_insta/assets/144636860/5eb57519-9a62-4e61-a3db-dbde261b24e2)
-
-
 
 
